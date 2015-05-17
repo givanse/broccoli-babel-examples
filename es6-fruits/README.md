@@ -1,9 +1,9 @@
 
-Install dependencies:
+## Install dependencies:
 
     npm install
 
-Build and execute:
+## Build and execute:
 
     broccoli build dist
     node dist/fruits.js
