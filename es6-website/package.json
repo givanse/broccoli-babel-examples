@@ -1,7 +1,7 @@
 {
-  "name": "es6-fruits",
+  "name": "es6-website",
   "version": "0.0.0",
-  "description": "minimal broccoli and babel example",
+  "description": "Minimal website example with Broccoli and Babel",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,9 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli": "^0.16.2",
-    "broccoli-babel-transpiler": "^5.0.0"
+    "broccoli-babel-transpiler": "^5.0.0",
+    "broccoli-concat": "0.0.13",
+    "broccoli-funnel": "^0.2.3",
+    "broccoli-merge-trees": "^0.2.1"
   }
 }
