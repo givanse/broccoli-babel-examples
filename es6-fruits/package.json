@@ -1,0 +1,20 @@
+{
+  "name": "es6-fruits",
+  "version": "0.0.0",
+  "description": "minimal broccoli and babel example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "broccoli",
+    "babel"
+  ],
+  "author": "@givanse",
+  "license": "MIT",
+  "devDependencies": {
+    "broccoli": "^0.16.2",
+    "broccoli-babel-transpiler": "^5.0.0",
+    "broccoli-funnel": "^0.2.3"
+  }
+}
