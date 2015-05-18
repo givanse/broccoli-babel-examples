@@ -5,7 +5,7 @@ let fruits = [
   {id: 102, name: 'plum'}
 ];
 
-for (var fruit of fruits) {
+for (let fruit of fruits) {
   let message = `ID: ${fruit.id} Name: ${fruit.name}`;
   
   console.log(message);
