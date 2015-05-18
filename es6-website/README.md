@@ -12,3 +12,7 @@ Serve the `index` file, example:
     cd dist/
     python -m SimpleHTTPServer
     # visit http://localhost:8000/
+
+You should see:
+
+![](screenshot.png)
