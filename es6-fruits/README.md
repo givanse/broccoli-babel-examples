@@ -2,6 +2,7 @@
 ## Install dependencies
 
     npm install
+    npm install -g broccoli-cli
 
 ## Build and run 
 
