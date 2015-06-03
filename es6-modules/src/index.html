@@ -16,13 +16,25 @@
     <body>
         <h1>My ES6 Modules</h1>
 
-        <div id="info"></div>
+        <div id="info">
+          </p>
+            For: [500, 1000, 500, 1000]
+          </p>
+        </div>
 
-        <hr>
-
-        <div id="content"></div>
-
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/my-app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.18/require.min.js"></script>
+        <script src="my-es6-modules.js"></script>
+        <script>
+            requirejs.config({
+                paths: {
+                  jquery: '//code.jquery.com/jquery-2.1.4.min'
+                }
+            });
+            require(['my-es6-modules/math', 'jquery'], function(math, $) {
+              var numbers = [500, 1000, 500, 1000];
+              var average = math.average(numbers);
+              $('#info').append('<p> The average is: '+average+'</p>');
+            });
+        </script>
     </body>
 </html>
