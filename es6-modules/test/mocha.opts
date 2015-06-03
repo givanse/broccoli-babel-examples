@@ -1,0 +1,3 @@
+test/jshint.spec.js
+test/unit/**/*.spec.js
+--require=test/init

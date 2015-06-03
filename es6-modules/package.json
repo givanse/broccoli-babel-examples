@@ -1,24 +1,33 @@
 {
-  "name": "es6-modules",
+  "name": "my-es6-modules",
   "version": "0.0.0",
   "description": "broccoli-babel-boilerplate usage example",
-  "main": "index.js",
+  "main": "dist/broccoli-babel-boilerplate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "broccoli serve",
+    "build": "rm -rf dist && broccoli build dist",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/givanse/broccoli-babel-examples.git"
   },
-  "keywords": [
-    "broccoli",
-    "babel",
-    "es6"
-  ],
   "author": "@givanse",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/givanse/broccoli-babel-examples/issues"
   },
-  "homepage": "https://github.com/givanse/broccoli-babel-examples"
+  "homepage": "https://github.com/givanse/broccoli-babel-examples",
+  "devDependencies": {
+    "babel": "^5.0.0",
+    "broccoli": "^0.16.2",
+    "broccoli-babel-transpiler": "^5.0.0",
+    "broccoli-concat": "^0.0.13",
+    "broccoli-funnel": "^0.2.3",
+    "broccoli-merge-trees": "^0.2.1",
+    "chai": "^2.2.0",
+    "glob": "^5.0.3",
+    "mocha": "^2.2.4",
+    "mocha-jshint": "^1.0.0"
+  }
 }

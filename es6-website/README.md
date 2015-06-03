@@ -16,4 +16,4 @@ Serve the `index` file, example:
 
 You should see:
 
-![](screenshot.png)
+![es6 simple website](screenshot.png)
