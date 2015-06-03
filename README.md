@@ -13,4 +13,8 @@ Transpile all the ES6 files found in target location and concatenate them into a
 
 ## es6-modules
 
-A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jayphelps/broccoli-babel-boilerplate). A more sophisticated setup that you can reuse for multiple projects.
+A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jayphelps/broccoli-babel-boilerplate), it handles:
+
+* modules
+* imports
+* unit tests
