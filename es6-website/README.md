@@ -1,3 +1,6 @@
+# es6-website
+
+Transpile all the ES6 files found in target location and concatenate them into a single ES5 file that is imported into a simple website.
 
 ## Install dependencies:
 
