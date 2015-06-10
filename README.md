@@ -1,11 +1,15 @@
 # broccoli-babel-examples
+
 Using ES6 today with Broccoli and Babel
 
 Each folder comes with instructions in a README file.
 
+If you would like to know more about ES6, you'll find an article for each feature in the series
+[ES6 In Depth Articles](https://hacks.mozilla.org/category/es6-in-depth/).
+
 ## es6-fruits
 
-A minimal example that shows you how to transpile a single ES6 file and then execute it through the command line.
+A minimal example that shows you how to transpile a single ES6 script and then execute it through the command line.
 
 ## es6-website
 
@@ -13,8 +17,10 @@ Transpile all the ES6 files found in target location and concatenate them into a
 
 ## es6-modules
 
-A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jayphelps/broccoli-babel-boilerplate), it handles:
+A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jayphelps/broccoli-babel-boilerplate), its a more sophisticated setup that handles:
 
 * modules
 * imports
 * unit tests
+
+Its meant to be the starting point of real projects.

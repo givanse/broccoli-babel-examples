@@ -1,5 +1,12 @@
+# es6-modules
 
-A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jayphelps/broccoli-babel-boilerplate).
+A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jayphelps/broccoli-babel-boilerplate), its a more sophisticated setup that handles:
+
+* modules
+* imports
+* unit tests
+
+Its meant to be the starting point of real projects.
 
 ## Install dependencies:
 

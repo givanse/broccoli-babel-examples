@@ -1,3 +1,6 @@
+# es6-fruits
+
+A minimal example that shows you how to transpile a single ES6 script and then execute it through the command line.
 
 ## Install dependencies
 
