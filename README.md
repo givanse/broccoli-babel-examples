@@ -1,11 +1,11 @@
 # broccoli-babel-examples
 
-Using ES6 today with Broccoli and Babel
+This are the code samples for [ES6 In Depth: Using ES6 today with Babel and Broccoli](https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/).
 
 Each folder comes with instructions in a README file.
 
 If you would like to know more about ES6, you'll find an article for each feature in the series
-[ES6 In Depth Articles](https://hacks.mozilla.org/category/es6-in-depth/).
+[ES6 In Depth Articles](https://hacks.mozilla.org/category/es6-in-depth/) published by Mozilla Hacks.
 
 ## [es6-fruits](https://github.com/givanse/broccoli-babel-examples/tree/master/es6-fruits)
 
