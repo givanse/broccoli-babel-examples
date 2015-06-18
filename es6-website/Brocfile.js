@@ -10,19 +10,20 @@ var mergeTrees = require('broccoli-merge-trees');
 // Transpile the source files
 var appJs = babel('src');
 
-// We'll be using ES6 generators and a Polyfill is needed
-// Add the Babel polyfill to the set of transpiled files
+// Grab the polyfill file provided by the Babel library
 var babelPath = require.resolve('broccoli-babel-transpiler');
 babelPath = babelPath.replace(/\/index.js$/, '');
 babelPath += '/node_modules/babel-core';
 var browserPolyfill = funnel(babelPath, {
   files: ['browser-polyfill.js']
 });
+
+// Add the Babel polyfill to the tree of transpiled files
 appJs = mergeTrees([browserPolyfill, appJs]);
 
 // Concatenate all the JS files into a single file
 appJs = concat(appJs, {
-  // the order matters
+  // we specify a concatenation order
   inputFiles: ['browser-polyfill.js', '**/*.js'],
   outputFile: '/js/my-app.js'
 });
