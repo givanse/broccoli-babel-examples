@@ -6,7 +6,7 @@ A usage example of [jayphelps/broccoli-babel-boilerplate](https://github.com/jay
 * imports
 * unit tests
 
-Its meant to be the starting point of real projects.
+Its meant to be the starting point of ambitious projects.
 
 ## Install dependencies:
 
