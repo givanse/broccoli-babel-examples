@@ -1,3 +1,6 @@
+// Node path module
+const path = require('path');
+
 // Babel transpiler
 var babel = require('broccoli-babel-transpiler');
 // filter trees (subsets of files)
@@ -11,11 +14,12 @@ var mergeTrees = require('broccoli-merge-trees');
 var appJs = babel('src');
 
 // Grab the polyfill file provided by the Babel library
+// Grab the polyfill file provided by the Babel library
 var babelPath = require.resolve('broccoli-babel-transpiler');
-babelPath = babelPath.replace(/\/index.js$/, '');
-babelPath += '/node_modules/babel-core';
+babelPath = path.dirname(babelPath);
+babelPath = path.join(babelPath, '/node_modules/babel-core');
 var browserPolyfill = funnel(babelPath, {
-  files: ['browser-polyfill.js']
+	files: ['browser-polyfill.js']
 });
 
 // Add the Babel polyfill to the tree of transpiled files
