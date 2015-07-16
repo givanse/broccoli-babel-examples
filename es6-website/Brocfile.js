@@ -1,5 +1,5 @@
 // Node path module
-const path = require('path');
+var path = require('path');
 
 // Babel transpiler
 var babel = require('broccoli-babel-transpiler');
