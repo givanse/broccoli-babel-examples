@@ -1,3 +1,6 @@
+// Node path module
+var path = require('path');
+
 // Babel transpiler
 var babel = require('broccoli-babel-transpiler');
 // filter trees (subsets of files)
@@ -12,8 +15,8 @@ var appJs = babel('src');
 
 // Grab the polyfill file provided by the Babel library
 var babelPath = require.resolve('broccoli-babel-transpiler');
-babelPath = babelPath.replace(/\/index.js$/, '');
-babelPath += '/node_modules/babel-core';
+babelPath = path.dirname(babelPath);
+babelPath = path.join(babelPath, 'node_modules', 'babel-core');
 var browserPolyfill = funnel(babelPath, {
   files: ['browser-polyfill.js']
 });
