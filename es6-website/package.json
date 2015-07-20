@@ -15,7 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli": "^0.16.2",
-    "broccoli-babel-transpiler": "^5.0.0",
+    "broccoli-babel-transpiler": "5.3.0",
     "broccoli-concat": "0.0.13",
     "broccoli-funnel": "^0.2.3",
     "broccoli-merge-trees": "^0.2.1"
