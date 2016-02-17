@@ -7,8 +7,8 @@ If you would like to know more about ES6, you'll find an article for each featur
 
 ## Branches
 
- * es6-in-depth - The original code as it was released when the Mozilla article was published. These are the code samples for [ES6 In Depth: Using ES6 today with Babel and Broccoli](https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/).
- * master - The most up to date code. It mainly consists of dependencies upgrades.
+ * [es6-in-depth](https://github.com/givanse/broccoli-babel-examples/tree/es6-in-depth) - The original code as it was released when the Mozilla article was published. These are the code samples for [ES6 In Depth: Using ES6 today with Babel and Broccoli](https://hacks.mozilla.org/2015/06/es6-in-depth-babel-and-broccoli/).
+ * [master](https://github.com/givanse/broccoli-babel-examples/tree/master) - The most up to date code. It mainly consists of dependencies upgrades.
 
 ## Examples
 
