@@ -11,7 +11,15 @@ var concat = require('broccoli-concat');
 var mergeTrees = require('broccoli-merge-trees');
 
 // Transpile the source files
-var appJs = babel('src', {browserPolyfill: true});
+var appJs = babel('src', {
+  presets: [
+    ['env', {
+      'targets': {
+        'browsers': ["last 2 versions"]
+      }
+    }]
+  ]
+});
 
 // Concatenate all the JS files into a single file
 appJs = concat(appJs, {

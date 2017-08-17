@@ -14,7 +14,8 @@
   "repository": "git@github.com:givanse/broccoli-babel-examples.git",
   "license": "MIT",
   "devDependencies": {
+    "babel-preset-env": "^1.6.0",
     "broccoli": "^0.16.9",
-    "broccoli-babel-transpiler": "5.5.0"
+    "broccoli-babel-transpiler": "^6.1.2"
   }
 }
