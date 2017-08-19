@@ -11,12 +11,22 @@ const indexHtml = funnel(src, {
 });
 
 const js = esTranspiler(src, {
-  stage: 0,
+  presets: [
+    ['env', {
+      'targets': {
+        'node': '4'
+      }
+    }]
+  ],
+
+  plugins: [
+    "babel-plugin-transform-es2015-modules-amd"
+  ],
+
   moduleIds: true,
-  modules: 'amd',
 
   // Transforms /index.js files to use their containing directory name
-  getModuleId: function (name) { 
+  getModuleId: function (name) {
     name = pkg.name + '/' + name;
     return name.replace(/\/index$/, '');
   },
